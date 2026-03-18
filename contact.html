@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Harikrishna Padhiyar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Background -->
+  <div class="grid-overlay"></div>
+  <div class="glow-orb glow-1"></div>
+  <div class="glow-orb glow-3"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <nav class="navbar">
+    <a href="index.html#home" class="nav-logo">
+      <span class="logo-bracket">[</span>HK<span class="logo-bracket">]</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#home"     class="nav-link">Home</a></li>
+      <li><a href="index.html#about"    class="nav-link">About</a></li>
+      <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+      <li><a href="contact.html"        class="nav-link active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       CONTACT PAGE MAIN
+  ══════════════════════════════════════ -->
+  <main class="standalone-main">
+
+    <!-- Header -->
+    <p class="page-label reveal">Get In Touch</p>
+    <h1 class="section-title reveal">Let's <span class="accent-name">Connect</span></h1>
+
+    <!-- Availability Banner -->
+    <div class="avail-banner reveal" style="transition-delay:0.1s">
+      <span class="tag-dot"></span>
+      <span class="mono-text">Currently available for freelance &amp; collaborations</span>
+    </div>
+
+    <!-- Contact Layout -->
+    <div class="contact-inner" style="margin-top:3rem">
+
+      <!-- Left: Info -->
+      <div class="contact-info reveal">
+        <h3>Got a project in mind?<br/>Let's build it together.</h3>
+        <p>Whether you're looking for a developer to join your team, want to collaborate on something bold, or just want to talk tech and gaming — my inbox is always open.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>harikrishna@example.com</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <span>github.com/harikrishna</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            <span>linkedin.com/in/harikrishna</span>
+          </div>
+        </div>
+
+        <!-- Fun Card -->
+        <div class="fun-card reveal" style="margin-top:2rem;transition-delay:0.2s">
+          <p class="mono-text cyan-text" style="font-size:0.7rem;margin-bottom:0.75rem">// FUN FACTS</p>
+          <div class="fun-row">
+            <span>Response time</span>
+            <span class="cyan-text mono-text">&lt; 24 hrs</span>
+          </div>
+          <div class="fun-row">
+            <span>Preferred stack</span>
+            <span class="cyan-text mono-text">MERN</span>
+          </div>
+          <div class="fun-row">
+            <span>Current game</span>
+            <span class="cyan-text mono-text">Solo Leveling S2</span>
+          </div>
+          <div class="fun-row" style="border-bottom:none">
+            <span>Coffee per day</span>
+            <span class="gold-text mono-text">∞ cups</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <form class="contact-form reveal" id="contactForm" style="transition-delay:0.15s" novalidate>
+        <p class="mono-text cyan-text" style="font-size:0.7rem;letter-spacing:0.12em;margin-bottom:1.5rem">// SEND A MESSAGE</p>
+
+        <div class="form-group">
+          <label class="form-label" for="name">Name <span style="color:var(--red)">*</span></label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Your full name" autocomplete="off"/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email <span style="color:var(--red)">*</span></label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" autocomplete="off"/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="subject">Subject</label>
+          <input class="form-input" type="text" id="subject" name="subject" placeholder="Project idea, freelance, collab..." autocomplete="off"/>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">Message <span style="color:var(--red)">*</span></label>
+          <textarea class="form-textarea" id="message" name="message" placeholder="Tell me about your project or idea..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+          Send Message
+        </button>
+        <div class="form-message" id="formMsg"></div>
+      </form>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p class="footer-text">
+      <span class="mono-text">©</span> 2025 Harikrishna Padhiyar — Built with ♥ &amp; lots of coffee
+    </p>
+    <div class="footer-links">
+      <a href="index.html#home"     class="footer-link">Home</a>
+      <a href="index.html#about"    class="footer-link">About</a>
+      <a href="index.html#projects" class="footer-link">Projects</a>
+      <a href="contact.html"        class="footer-link">Contact</a>
+    </div>
+  </footer>
+
+  <!-- Extra styles for contact.html only -->
+  <style>
+    .avail-banner {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 100px; padding: 0.45rem 1.1rem; margin-top: -1rem;
+    }
+    .fun-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 1.25rem 1.5rem;
+    }
+    .fun-row {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.7rem 0; border-bottom: 1px solid var(--border);
+      font-size: 0.88rem; color: var(--text-muted);
+    }
+  </style>
+
+  <!-- ══════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════ -->
+  <script>
+  // ─── CUSTOM CURSOR ───
+  const cursor     = document.getElementById('cursor');
+  const cursorRing = document.getElementById('cursorRing');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+
+  (function animateCursor() {
+    rx += (mx - rx) * 0.15;
+    ry += (my - ry) * 0.15;
+    cursor.style.left     = mx + 'px';
+    cursor.style.top      = my + 'px';
+    cursorRing.style.left = rx + 'px';
+    cursorRing.style.top  = ry + 'px';
+    requestAnimationFrame(animateCursor);
+  })();
+
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width = '16px'; cursor.style.height = '16px';
+      cursorRing.style.width = '52px'; cursorRing.style.height = '52px'; cursorRing.style.opacity = '0.9';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width = '10px'; cursor.style.height = '10px';
+      cursorRing.style.width = '36px'; cursorRing.style.height = '36px'; cursorRing.style.opacity = '0.5';
+    });
+  });
+
+  // ─── MOBILE NAV ───
+  const navToggle = document.getElementById('navToggle');
+  const navLinks  = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+
+  // ─── SCROLL REVEAL ───
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => revealObs.observe(el));
+
+  // Make initial elements visible on load
+  setTimeout(() => {
+    revealEls.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight) el.classList.add('visible');
+    });
+  }, 100);
+
+  // ─── CONTACT FORM ───
+  const form      = document.getElementById('contactForm');
+  const formMsg   = document.getElementById('formMsg');
+  const submitBtn = document.getElementById('submitBtn');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nameEl    = document.getElementById('name');
+    const emailEl   = document.getElementById('email');
+    const messageEl = document.getElementById('message');
+
+    [nameEl, emailEl, messageEl].forEach(f => f.classList.remove('invalid'));
+    formMsg.className   = 'form-message';
+    formMsg.textContent = '';
+
+    let valid = true;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!nameEl.value.trim())                                    { nameEl.classList.add('invalid');    valid = false; }
+    if (!emailEl.value.trim() || !emailRegex.test(emailEl.value)) { emailEl.classList.add('invalid');   valid = false; }
+    if (!messageEl.value.trim() || messageEl.value.length < 10)   { messageEl.classList.add('invalid'); valid = false; }
+
+    if (!valid) {
+      formMsg.className   = 'form-message error';
+      formMsg.textContent = '✗  Please fill in all required fields correctly.';
+      return;
+    }
+
+    submitBtn.textContent = 'Sending...';
+    submitBtn.disabled = true;
+
+    setTimeout(() => {
+      formMsg.className   = 'form-message success';
+      formMsg.textContent = "✓  Message received! I'll get back to you within 24 hours.";
+      form.reset();
+      submitBtn.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="22" y1="2" x2="11" y2="13"/>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+        </svg> Send Message`;
+      submitBtn.disabled = false;
+    }, 1500);
+  });
+  </script>
+
+</body>
+</html>
